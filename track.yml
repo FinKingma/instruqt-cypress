@@ -1,0 +1,62 @@
+slug: cypress
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+title: cypress
+teaser: A short description of the track.
+description: |-
+  A long description of the track.
+
+  You can use any GitHub flavoured markdown.
+tags: []
+challenges:
+- slug: open-website
+  credits: 10
+  title: Open website
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    We have provided your with an empty cypress project.
+    Only one test exists so far, but it is not completed yet:
+    ```sh
+    nano cypress/integration/cypress_test.js
+    ```
+
+    It is your job to make cypress open an actual page so that your test can succeed. Good luck!
+    [Cypress guide](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#What-You’ll-Learn)
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
+- slug: navigate-to-subpage
+  credits: 10
+  title: navigate to subpage
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    We have provided your with an empty cypress project.
+    Only one test exists so far, but it is not completed yet:
+    ```sh
+    nano cypress/integration/cypress_test.js
+    ```
+
+    It is now your job to navigate to the correct subpage on the example cypress page
+    [Cypress guide](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#What-You’ll-Learn)
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
+developers:
+- fkingma@xebia.com

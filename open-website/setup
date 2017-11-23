@@ -1,0 +1,25 @@
+#!/bin/bash
+
+mkdir -p cypress/integration
+
+echo '{
+  "name": "Books",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cypress": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^1.1.1"
+  }
+}
+' > 'package.json'
+
+echo "describe('My First Test', function() {
+  it('Can navigate to cypress example page', function() {
+    
+    cy.url().should('include', 'https://example.cypress.io')
+  })
+})" > 'cypress/integration/cypress_test.js'
+
+npm install

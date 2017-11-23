@@ -1,0 +1,17 @@
+#!/bin/bash
+result=$(npm run cypress)
+
+# removing color codes
+rawResult=$(sed "s,$(printf '\033')\\[[0-9;]*[a-zA-Z],,g" <<< $result)
+
+passCheck=" 1 passing"
+
+if [[ $rawResult == *$passCheck* ]]; then
+  echo "gelukt"
+  # exit 0
+else
+  echo "DIAG: Cypress did not manage to run your test succesfully"
+  # exit 1
+fi
+
+# exit 1
