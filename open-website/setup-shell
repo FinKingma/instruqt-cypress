@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "describe('My First Test', function() {
-  it('Can navigate to subpage called env', function() {
-    cy.visit('https://example.cypress.io')
+# echo "describe('My First Test', function() {
+#   it('Can navigate to subpage called env', function() {
+#     cy.visit('https://example.cypress.io')
     
-    cy.url().should('include', '/cypress-api/env')
-  })
-})" > './cypress/integration/cypress_test.js'
+#     cy.url().should('include', '/cypress-api/env')
+#   })
+# })" > './cypress/integration/cypress_test.js'
 
 exit 0

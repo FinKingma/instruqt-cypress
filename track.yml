@@ -7,7 +7,7 @@ description: |-
   A long description of the track.
 
   You can use any GitHub flavoured markdown.
-tags: [cypress, v0.4]
+tags: [cypress, v0.5]
 challenges:
 - slug: open-website
   credits: 10
