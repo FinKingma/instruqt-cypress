@@ -1,7 +1,7 @@
 template: containers
 configuration:
   Containers:
-  - Image: finkingma/cypress-instruqt:latest
+  - Image: finkingma/cypress-instruqt
     Name: shell
     Privileged: false
     Resources:

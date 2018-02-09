@@ -1,32 +1,32 @@
 #!/bin/bash
 
-cd ~/cypress-proj
+# cd ~/cypress-proj
 
-echo '{
-  "name": "Books",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "cypress": "cypress run"
-  },
-  "devDependencies": {
-    "cypress": "^1.1.1"
-  }
-}
-' > './package.json'
+# echo '{
+#   "name": "Books",
+#   "version": "1.0.0",
+#   "private": true,
+#   "scripts": {
+#     "cypress": "cypress run"
+#   },
+#   "devDependencies": {
+#     "cypress": "^1.1.1"
+#   }
+# }
+# ' > './package.json'
 
 
-echo '{}
-' > './cypress.json'
+# echo '{}
+# ' > './cypress.json'
 
-mkdir ./cypress/integration
+# mkdir ./cypress/integration
 
-echo "describe('My First Test', function() {
-  it('Can navigate to subpage called env', function() {
-    cy.visit('https://example.cypress.io')
+# echo "describe('My First Test', function() {
+#   it('Can navigate to subpage called env', function() {
+#     cy.visit('https://example.cypress.io')
     
-    cy.url().should('include', '/cypress-api/env')
-  })
-})" > './cypress/integration/cypress_test.js'
+#     cy.url().should('include', '/cypress-api/env')
+#   })
+# })" > './cypress/integration/cypress_test.js'
 
-npm install
+# npm install
