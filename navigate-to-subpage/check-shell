@@ -8,10 +8,10 @@ passCheck=" 1 passing"
 
 if [[ $rawResult == *$passCheck* ]]; then
   echo "gelukt"
-  # exit 0
+  exit 0
 else
   echo "DIAG: Cypress did not manage to run your test succesfully"
-  # exit 1
+  exit 1
 fi
 
-# exit 1
+exit 1

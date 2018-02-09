@@ -1,12 +1,9 @@
 template: containers
 configuration:
   Containers:
-  - Image: gcr.io/instruqt/shell-node:latest
+  - Image: finkingma/cypress-instruqt:latest
     Name: shell
-    Ports:
-    - Exposed: true
-      Name: shell
-      Port: 8080
     Privileged: false
     Resources:
       Memory: 128
+    Shell: /bin/bash

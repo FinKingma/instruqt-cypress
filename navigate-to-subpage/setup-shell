@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p cypress/integration
+cd ~/cypress-proj
 
 echo '{
   "name": "Books",
@@ -13,7 +13,13 @@ echo '{
     "cypress": "^1.1.1"
   }
 }
-' > 'package.json'
+' > './package.json'
+
+
+echo '{}
+' > './cypress.json'
+
+mkdir ./cypress/integration
 
 echo "describe('My First Test', function() {
   it('Can navigate to subpage called env', function() {
@@ -21,6 +27,6 @@ echo "describe('My First Test', function() {
     
     cy.url().should('include', '/cypress-api/env')
   })
-})" > 'cypress/integration/cypress_test.js'
+})" > './cypress/integration/cypress_test.js'
 
 npm install
