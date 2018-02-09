@@ -6,5 +6,5 @@ configuration:
     Ports: []
     Privileged: false
     Resources:
-      Memory: 128
+      Memory: 512
     Shell: /bin/bash
