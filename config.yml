@@ -1,8 +1,9 @@
 template: containers
 configuration:
   Containers:
-  - Image: finkingma/cypress-instruqt
+  - Image: gcr.io/instruqt/shell:latest
     Name: shell
+    Ports: []
     Privileged: false
     Resources:
       Memory: 128

@@ -1,31 +1,27 @@
 type: track
 slug: cypress
-icon: https://www.cypress.io/img/logo-dark.4e8064a6.png
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
 title: Cypress
 teaser: A short description of the track.
 description: |-
   A long description of the track.
 
   You can use any GitHub flavoured markdown.
-tags: [cypress, v0.1]
+tags: [cypress]
 challenges:
 - slug: open-website
   credits: 10
-  title: Open website
+  title: open website
   teaser: A short description of the challenge.
-  notes: []
+  notes:
+  - type: text
+    title: Title of the note
+    contents: Replace this text with your own text
   assignment: |-
-    We have provided your with an empty cypress project.
-    Only one test exists so far, but it is not completed yet:
-    ```sh
-    nano cypress/integration/cypress_test.js
-    ```
+    The assignment the participant needs to complete in order to proceed.
 
-    It is your job to make cypress open an actual page so that your test can succeed. Good luck!
-    [Cypress guide](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#What-You’ll-Learn)
+    You can use any GitHub flavoured markdown.
   difficulty: basic
-  timelimit: 900
-  points: 50
   unlocks: []
   tabs:
   - type: terminal
@@ -33,4 +29,4 @@ challenges:
     hostname: shell
 developers:
 - fkingma@xebia.com
-status: preview
+published: false

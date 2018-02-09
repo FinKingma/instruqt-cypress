@@ -1,9 +1,6 @@
 #!/bin/bash
 result=$(npm run cypress)
 
-# removing color codes
-rawResult=$(sed "s,$(printf '\033')\\[[0-9;]*[a-zA-Z],,g" <<< $result)
-
 passCheck=" 1 passing"
 
 if [[ $rawResult == *$passCheck* ]]; then
